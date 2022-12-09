@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="counterTxt"></div>
+    <button onclick="startCounter()">Başlat</button>
+    <button onclick="resetCounter()">sıfırla</button> -->
+    <script>
+        // var begin = 0;
+
+        // function showTime(value){
+        //     document.getElementById("counterTxt").innerHTML ="<h1>" + value +
+        //         "</h1>";
+        // }
+
+        // showTime(begin);
+
+        // function startCounter(){
+        //     counter = setInterval(function() {
+        //         begin++;
+        //         showTime(begin);
+        //     }, 1000);
+        // }
+
+        // function resetCounter(){
+        //     clearInterval(counter);
+        //     begin = 0;
+        //     showTime(begin);
+        // }
+
+
+
+
+
+
+
+
+        // var user = [];
+
+        // function addUser(id, name){
+        //     if(typeof id === "number" && name.length > 2){
+        //         user.push({
+        //             id: id,
+        //             name: name
+        //         });
+
+        //         console.log("id:" + id + ",  name:" + name + " verileri ile kullanıcı tamamlandı.")
+        //     }
+
+        //     else{
+        //         console.log("kullanıcı tanımı ile veriler hatalı!")
+
+        //     }
+        // }
+
+
+        // addUser(5,"swaque");
+
+
+
+
+
+
+
+
+        // let cars = ["bmw", "mercedes", "lamborghini", "dodge", "nissan", ];
+
+        // cars.forEach( function(element, index ){
+
+        //     console.log((element, index));
+        //     cars[index ] = element.toUpperCase();
+        // });
+
+        // console.log(cars)
+
+
+
+
+
+
+
+
+        // let user = {
+        //     name: ": kyrie",
+        //     email: ": kyrie@gmail.com",
+        //     age: ": 21"
+        // }
+
+        // for(let property in user){
+        //     console.log( property, user[property]);
+
+        // }
+
+
+
+
+
+
+
+        // let cars = [ "buggati", "ferrari", "lamborghini", "mclaren",]
+
+        // for(let car of cars) {
+        //     console.log(car);
+        // }
+
+
+
+
+
+
+
+
+
+
+        //  let state = {
+        //     name: "los angeles"
+        //  };
+
+
+        //  let data = {
+        //     cars: [
+        //         {brand: "bugatti", mark: "chiron"},
+        //         {brand: "ferrari", mark: "488 pista"},
+        //         {brand: "lamborghini", mark: "huracan evo"},
+        //         {brand: "nissan", mark: "gtr r35"}
+        //     ],
+        //     session: state,
+        //     sessionExpireTime: 3600000
+        //  };
+
+        //  console.log( JSON.stringify( data, ["cars", "mark", "session", "sessionExpireTime"]));
+
+        // console.log( JSON.stringify ( data, null, 4) )
+
+
+         
+
+
+
+
+        fetch('https://reqres.in/api/users')
+        .then(response => response.json())
+        .then(data => console.log(data))
+
+         
+
+
+
+
+    </script>
+</body>
+</html>

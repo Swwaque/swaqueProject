@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+
+header {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 85px;
+    background-color: rgb(15, 15, 15);
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.darkMode { 
+    background-color: #121212;
+    color: rgb(201, 201, 201);
+    border: 2px white;
+    margin-right: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+
+.darkMode:hover {
+    color: white;
+}
+
+.navigation ul {
+    display: flex;
+    margin-left: 500px;
+}
+
+.navigation li {
+    margin: 15px;
+}
+
+.navigation button {
+    background-color: transparent;
+    color: rgb(201, 201, 201);
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+}
+
+.navigation button:hover {
+    color: white;
+}
+
+
+.logo {
+    cursor: pointer;
+    display: flex;
+    margin-left: 60px;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.navigation li a{
+    color: rgb(201, 201, 201);
+}
+
+.navigation li a:hover {
+    color: white;
+}
+
+
+/* Main Section */
+
+.main {
+    display: flex;
+}
+
+.mainCarimg{
+    z-index: -2;
+    width: 100%;
+}
+
+.mainCol{
+    position: absolute;
+    margin-top: 150px;
+    font: 65px Arial;
+    z-index: -1;
+    color: white;
+    margin-left: 80px;
+}
+
+.mainCol h1{
+    font: 45px Arial;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* Content Section */
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 130px;
+    margin-right: 170px;
+
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 130px;
+    margin-right: 220px;
+
+}
+
+.paragraph {
+    margin-top: 30px;
+    font-size: 33px;
+}
+
+
+.inp button{
+    height: 55px;
+    width: 220px;
+    margin-top: 50px;
+    border: solid 1px  #cbcbca;;
+    background-color: white;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.inp button:hover {
+    color: white;
+    background-color: rgb(29, 29, 29);
+    transition: 0.5s;
+}
+
+.inp a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.demo {
+    margin-left: 80px;
+}
+
+
+/* Time İndicator */
+
+.bottom {
+    display: flex;
+    align-items: center;
+    border-top: 4px double gray ;
+    height: 80px;
+    width: 1335px;
+    margin-left: 10px;
+   
+    
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

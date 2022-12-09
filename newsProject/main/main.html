@@ -1,0 +1,261 @@
+<html lang="en">
+    <head>
+        <title>Swaquepedia - Home</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Swaque">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js"></script>
+        <style>
+            .dark-mode {
+                background-color: #121212;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="main.html">
+                    <img src="123rf-logo-white.webp">
+                </a>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><button><a href="main.html">HOME</a></button></li>
+                    <li><button><a href="#">CARS</a></button></li>
+                    <li><button><a href="../about/about.html">ABOUT</a></button></li>
+                    <li><button><a href="../passwordPage/password.html">ACCOUNT</a></button></li>
+                </ul>
+            </div>
+            <div>
+                <button onclick="darkMode()" class="darkMode">Dark mode</button>
+            </div>
+        </header>
+
+        <!-- Main Section -->
+          
+        <section class="main">
+            <div class="mainCarimg">
+                <img src="main8.jpg" style="width: 100%;">
+            </div>
+            <div class="mainCol">
+                <h1>THE REAL RACE </h1>  <h2>MORE THAN <br> A GAME </h2>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+
+        <section class="content">
+            <div class="containers">
+                <div class="container1">
+                    <div class="carimg">
+                        <img src="huracan.webp" width="570px" height="250px">
+                    </div>
+                    <div class="demo">
+                        <div class="paragraph">
+                            <p><b>HURACÁN NUMBER 20,000  <br> MARKS MILESTONE</b></p>
+                        </div>
+                        <div class="inp">
+                            <button  onclick="location.href='../news1/news1.html'">READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container2">
+                    <div class="carimg">
+                        <img src="bmwm8.webp" width="570px" height="250px">
+                    </div>
+                    <div class="demo">
+                        <div class="paragraph">
+                            <p><b>THE NEW BMW M8   <br> GRAN AND COUPE SERİES</b></p>
+                        </div>
+                        <div class="inp">
+                            <button onclick="location.href='../news1/news2.html'">READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Time İndicator -->
+
+        <section>
+            <div class="bottom">
+                <p> Copyright @ 2022 All Rights Reserved From Swaque </p>
+                <div class="time">
+                        <p>time İndicator  /</p>
+                        <p id="year"></p>/
+                        <p id="month"></p>/
+                        <p id="day"></p>/
+                        <!-- <p id="hours"></p>/
+                        <p id="minutes"></p>/
+                        <p id="second"></p>/ -->
+                </div>
+            </div>
+        </section>
+        <script> 
+
+        function darkMode() {
+            var element = document.body
+            element.classList.toggle("dark-mode");
+        }
+
+        // time Section
+
+            // var date = new Date();
+
+            // document.getElementById("year").innerHTML = date.getFullYear();
+            // document.getElementById("month").innerHTML = date.getMonth();
+            // document.getElementById("day").innerHTML = date.getDay();
+            // document.getElementById("hours").innerHTML = date.getHours();
+            // document.getElementById("minutes").innerHTML = date.getMinutes();
+            // document.getElementById("second").innerHTML = date.getSeconds();
+
+
+            // ayrı bölüm
+
+        {
+            for(var i = 0; i < 10;i++){
+                console.log("i value:" + i)
+            }
+        }
+
+        {
+            var i = 0
+            while(i < 100){
+                console.log("i value:" + i)
+                i+=2
+            }
+        }
+
+
+
+
+        {
+            var name = "Swaque";
+            var message = "Hi!. My name is " + name + " What's your Name";
+            document.getElementById("my_text").value
+            console.log(message);
+        }
+
+
+
+        var a= 5
+        var b= 4
+        if(5 > 4){
+            console.log(a + " is bigger than " + b)
+        }
+        else{
+            console.log(b + " is bigger than " + a)
+        }
+
+
+        var time = 16.45;
+
+        if(time < 12.00){
+            console.log("Good morning");
+        }
+        else if(time < 16.00){
+            console.log("Good afternoon");
+        }
+        else if(time < 22.00){
+            console.log("Good evening");
+        }
+        else{
+            console.log("Good Night");
+        }
+
+        // ayrı bölüm
+
+
+        var date = new Date();
+        var dateString = "";
+
+switch (date.getDay()) {
+
+    case 0:
+        dateString = "Sunday";   
+        break;
+    case 1:
+        dateString = "Monday";
+        break;
+    case 2:
+        dateString = "Tuesday";
+        break;
+    case 3:
+        dateString = "Wednesday";
+        break;
+    case 4:
+        dateString = "Thursday";
+        break;
+    case 5:
+        dateString = "Friday";
+        break;
+    case 6:
+        dateString = "Saturday"; 
+        break;
+    default:
+        dateString = "Error!";
+        break;         
+}
+
+console.log(dateString)
+
+ var getMontString = function(month) {
+     switch (month) {
+        case 0:
+             return "January";
+             break;
+         case 1:
+             return "February";
+            break;
+         case 2: 
+             return "march";
+             break;
+         case 3: 
+             return "April";
+            break;
+        case 4:
+            return "May";
+            break;
+        case 5:
+            return "June";
+            break;
+        case 6:
+            return "July";
+            break;
+        case 7:
+            return "Agust";
+            break;
+        case 8:
+            return "September"; 
+            break;
+        case 9:
+            return "October"; 
+            break;
+        case 10:
+            return "November";
+            break;
+        case 11:
+            return "December";
+            break;
+        default:
+            return "Error!";
+            break;       
+
+                     
+    }
+}
+
+var fullDateString = date.getUTCDate() + " " + getMontString(date.getMonth())
+ + " " + date.getFullYear() + " - " + dateString
+
+ console.log(fullDateString);
+
+ 
+
+
+         </script>
+    </body>
